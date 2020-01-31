@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ConstraintLayoutDemo</string>
+    <string name="textView1">TextView1</string>
+    <string name="textView2">TextView2</string>
+    <string name="textView3">TextView3</string>
+
+</resources>

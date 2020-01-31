@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--tools:layout_editor_absoluteY="81dp">-->
+
+    <!--引用：https://www.jianshu.com/p/b2c024a78db1 -->
+
+    <!--宽填充满父布局-->
+    <!--<Button
+        android:id="@+id/bt_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <!--居中-->
+    <!--<Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--
+    bias：偏移量
+    layout_constraintHorizontal_bias:   垂直偏移比例
+    layout_constraintVertical_bias:     水平偏移比例
+    -->
+    <!--<Button
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bias"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2" />-->
+
+    <!--
+    layout_constraintHorizontal_chainStyle:
+    spread:         间隔相等
+    spread_inside:  间隔相等，但只存在中间
+    packed:         打包
+    -->
+    <!--<Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintEnd_toStartOf="@id/bt_2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        app:layout_constraintEnd_toStartOf="@id/bt_3"
+        app:layout_constraintStart_toEndOf="@id/bt_1" />
+
+    <Button
+        android:id="@+id/bt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt_2" />-->
+
+    <!--
+    圆形定位 constraintCircle:
+    //引用的控件ID
+    app:layout_constraintCircle="@+id/btn_2"
+    //圆半径
+    app:layout_constraintCircleRadius="100dp"
+    //偏移圆角度  水平右方向为0逆时针方向旋转
+    app:layout_constraintCircleAngle="45"-->
+    <!--<Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆心"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Circle"
+        android:textAllCaps="false"
+        app:layout_constraintCircle="@id/bt_1"
+        app:layout_constraintCircleAngle="120"
+        app:layout_constraintCircleRadius="100dp" />-->
+
+    <!--
+    尺寸比例
+    layout_constraintDimensionRatio="H,16:9":   W:H是16：9，H动态适配
+    layout_constraintDimensionRatio="W,16:9":   W:H是16：9，W动态适配
+    -->
+    <!--<ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="W,16:9" />-->
+
+    <!--
+    goneMargin: 依赖的View设置Gone以后才会生效的属性
+    当 bt_2 设置 android:visibility="gone" 后，
+    bt_1 的 app:layout_goneMarginEnd="80dp" 就会生效。
+    -->
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bt_2"
+        app:layout_goneMarginEnd="80dp" />
+
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/bt_1"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
