@@ -1,42 +1,26 @@
 1.工具&工程
-1.Fragment
+(1)Resource Manager
+(2)Layout Editor
+(3)Lint
+(4)APK Analyzer
+(5)Android Profile：CPU Profiler、Memory Profiler、Network Profiler、Energy Profiler
+(6)Clang-Tidy的支持
+(7)Debug API
+(8)AAPT2
+(9)D8（是默认的DEX编译器）
+(10)Gradle
+(11)Android Plugin for Gradle
+(12)Device File Explorer
+(13)APK性能剖析和调试
+(14)Google的Maven仓库
+(15)tools/bin下的APK分析器的命令行版本apkanalyzer
+(16)SDK Build Tools
+(17)RenderScript
 
-2.Camera
-
-3.Resource Manager
-
-4.Layout Editor
-
-5.Lint
-
-6.C++/NDK
-
-7.APK Analyzer
-
-8.Android Profile：CPU Profiler、Memory Profiler、Network Profiler、Energy Profiler
-
-9.Clang-Tidy的支持
-
-10.Android Jetpack
-
-11.AndroidX
-
-12.切片
-
-13.Debug API
-
-14.AAPT2
-
-15.D8（是默认的DEX编译器）
-
-16.Gradle
-
-17.Android Plugin for Gradle
-
-18.Device File Explorer
-
-19.APK性能剖析和调试
-
-20.Google的Maven仓库
-
-21.tools/bin下的APK分析器的命令行版本apkanalyzer
+2.Android能力
+(1)Fragment
+(2)Camera
+(3)C++/NDK
+(4)Android Jetpack
+(5)AndroidX
+(6)切片
