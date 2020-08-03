@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PermissionDemo</string>
+    <string name="send_sms">发送短信</string>
+    <string name="sms_content">请输入短信内容</string>
+    <string name="sms_number">请输入收件人号码</string>
+    <string name="sms_input_error">请输入内容和号码</string>
+    <string name="sms_send_succ">短信发送成功</string>
+</resources>
