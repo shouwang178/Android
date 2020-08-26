@@ -5,4 +5,7 @@
     <string name="sms_number">请输入收件人号码</string>
     <string name="sms_input_error">请输入内容和号码</string>
     <string name="sms_send_succ">短信发送成功</string>
+    <string name="custom_permission_label">自定义权限</string>
+    <string name="custom_permission_desc">受保护的页面，需要请求权限访问</string>
+    <string name="open_protected_activity">打开受保护的页面</string>
 </resources>

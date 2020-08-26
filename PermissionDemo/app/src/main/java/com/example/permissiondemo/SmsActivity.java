@@ -27,6 +27,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 通过发送短信，展示Android 6.0及以上动态权限申请机制
+ *
+ * */
 public class SmsActivity extends Activity {
 
     private final static String TAG = SmsActivity.class.getSimpleName();
@@ -63,8 +67,7 @@ public class SmsActivity extends Activity {
         @Override
         public void onAction(View view) {
             switch (view.getId()) {
-                //发送短信
-                case R.id.sendSms:
+                case R.id.sendSms://发送短信
                     onSmsClick();
                     break;
             }

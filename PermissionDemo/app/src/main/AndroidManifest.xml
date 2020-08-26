@@ -2,6 +2,14 @@
     package="com.example.permissiondemo">
 
     <uses-permission android:name="android.permission.SEND_SMS"/>
+    
+    <permission
+        android:name="com.example.permissiondemo.custompermission"
+        android:protectionLevel="dangerous"
+        android:permissionGroup="android.permission-group.COST_MONEY"
+        android:label="@string/custom_permission_label"
+        android:description="@string/custom_permission_desc"
+        />
 
     <application
         android:allowBackup="true"
@@ -17,10 +25,15 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>>
+        </activity>
 
         <activity
             android:name=".SmsActivity">
+        </activity>
+
+        <activity
+            android:name=".CustomPermissionActivity"
+            android:permission="com.example.permissiondemo.custompermission">
         </activity>
     </application>
 

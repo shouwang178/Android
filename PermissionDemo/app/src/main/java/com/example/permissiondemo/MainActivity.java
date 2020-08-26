@@ -23,6 +23,9 @@ public class MainActivity extends Activity {
     private void initView() {
         Button sendSms = findViewById(R.id.send_sms);
         sendSms.setOnClickListener(listener);
+
+        Button openProtectdAct = findViewById(R.id.open_protected_activity);
+        openProtectdAct.setOnClickListener(listener);
     }
 
     private OnClickListener listener = new OnClickListener() {
@@ -30,10 +33,30 @@ public class MainActivity extends Activity {
         public void onAction(View view) {
             switch (view.getId()) {
                 case R.id.send_sms:
-                    Intent intent = new Intent(MainActivity.this, SmsActivity.class);
-                    startActivity(intent);
+                    openSms();
+                    break;
+                case R.id.open_protected_activity:
+                    openProtectedAct();
                     break;
             }
         }
     };
+
+    /**
+     * 打开短信页面
+     *
+     * */
+    private void openSms() {
+        Intent intent = new Intent(this, SmsActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 打开受保护的页面
+     *
+     * */
+    private void openProtectedAct() {
+        Intent intent = new Intent(this, CustomPermissionActivity.class);
+        startActivity(intent);
+    }
 }
