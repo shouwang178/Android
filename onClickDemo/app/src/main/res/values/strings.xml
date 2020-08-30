@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">onClickDemo</string>
+    <string name="btn1">匿名内部类</string>
+    <string name="btn2">布局绑定事件</string>
+    <string name="btn3">其他类实现接口</string>
+    <string name="btn4">主类实现接口</string>
+    <string name="btn1_text">匿名内部类响应点击事件</string>
+    <string name="btn2_text">布局绑定响应点击事件</string>
+    <string name="btn3_text">其他类实现接口响应点击事件</string>
+    <string name="btn4_text">主类实现接口响应点击事件</string>
+</resources>
