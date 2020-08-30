@@ -1,2 +1,0 @@
-include ':app', ':myapplication'
-rootProject.name='MyFirstApp'
